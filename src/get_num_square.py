@@ -13,6 +13,6 @@ else:
 
 # to set output, print to shell in following syntax
 squared_number = num ** 2
-os.environ['GITHUB_OUTPUT'] = squared_number
+os.environ['GITHUB_OUTPUT'] = str( squared_number )
 
 print(f"The square of {num} is {squared_number}")
