@@ -15,7 +15,8 @@ else:
 #print(f"::set-output name=num_squared::{num ** 2}")
 
 squared_number = num ** 2
-os.environ['GITHUB_OUTPUT'] = str( squared_number )
 
-print(f"The square of {num} is {squared_number}")
+#os.environ['GITHUB_OUTPUT'] = str( squared_number )
+#print(f"The square of {num} is {squared_number}")
+
 print(f"num_squared={squared_number}")
