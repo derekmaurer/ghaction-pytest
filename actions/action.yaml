@@ -1,11 +1,11 @@
 # action.yaml
-name: 'Custom GitHub Action'
-description: 'A GitHub Action that takes an input and returns the square of the number'
+name: 'Create Expanse Change Ticket'
+description: 'A GitHub Action that opens a expanse change ticket'
 inputs:
-  num:
-    description: 'Enter a number'
+  subject:
+    description: 'A short description placeholder that will be used in the name of the change ticket'
     required: true
-    default: "1"
+    default: "Test expanse change"
 outputs:
   num_squared:
     description: 'Square of the input'
@@ -17,9 +17,9 @@ runs:
     - name: Install Python
       uses: actions/setup-python@v5
       with:
-        python-version: '3.10'  
+        python-version: '3.12.7'  
     - name: Install Dependencies
-      run: #pip install -r requirements.txt
+      run: pip install -r requirements.txt
       shell: bash
     - name: Pass Inputs to Shell
       run: |
